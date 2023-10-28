@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase";
@@ -76,16 +76,13 @@ const Chats = () => {
           Logout
         </div>
       </div>
-
-      <div style={{ fontFamily: "Montserrat" }}>
-        <ChatEngine
-          height="calc(100vh-66px)"
-          projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
-          userName={user.email}
-          userSecret={user.uid}
-          fontFamily="Montserrat"
-        />
-      </div>
+      <ChatEngine
+        height="calc(100vh-66px)"
+        projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
+        userName={user.email}
+        userSecret={user.uid}
+        fontFamily="Montserrat"
+      />
     </div>
   );
 };

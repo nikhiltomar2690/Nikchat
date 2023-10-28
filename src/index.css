@@ -6,6 +6,67 @@
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) {
+  html,
+  body {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+/* Portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide */
+@media (min-width: 481px) {
+  html,
+  body {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+/* Portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) {
+  html,
+  body {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+/* Tablet, landscape iPad, lo-res laptops and desktops */
+@media (min-width: 961px) {
+  html,
+  body {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+/* Big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) {
+  html,
+  body {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+/* Hi-res laptops and desktops */
+@media (min-width: 1281px) {
+  html,
+  body {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
 /* Chats Page */
 
 .chats-page {
@@ -13,7 +74,8 @@
   top: 0px;
   left: 0px;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  background-image: url("./images/bg.jpg");
 }
 
 .nav-bar {
@@ -31,7 +93,41 @@
   font-weight: 700;
   color: white;
 }
-
+.ce-chat-title {
+  background-image: url("./images/bg.jpg");
+}
+.ce-message-bubble {
+  background-image: url("./images/bg.jpg");
+  color: white;
+}
+.ce-my-message-bubble {
+  background-image: url("./images/bg.jpg");
+}
+.ce-message-input-form {
+  background-image: url("./images/bg.jpg");
+}
+.ce-input {
+  border-radius: 4px;
+}
+.ce-chat-title-text {
+  color: white !important;
+}
+.ce-primary-button {
+  background-image: url("./images/bg.jpg");
+}
+.ce-chat-card {
+  background-image: url("./images/bg.jpg");
+}
+.ce-active-chat-card {
+  background-image: url("./images/bg.jpg");
+}
+.ce-their-message-bubble {
+  background-image: url("./images/bg.jpg");
+  color: white !important;
+}
+.ce-chat-subtitle-text {
+  color: white !important;
+}
 .logout-tab {
   position: absolute;
   top: 22px;
